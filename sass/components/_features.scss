@@ -1,0 +1,37 @@
+.features-block{
+  padding-bottom: 44px;
+
+  &__item{
+    padding-right: 22px;
+    padding-top: 24px;
+  }
+
+  &__item-wrapper{
+
+    @include break(small) {
+       width: 60%;
+       margin-top: 30px
+     }
+    @include break(super-small) {
+      width: 80%;
+    }
+  }
+}
+.item{
+
+  &__title{
+    padding-left: 72px;
+    min-height: 47px;
+    display: flex;
+    align-items: center;
+
+    span{
+      font-family: $helvetica;
+    }
+  }
+
+  &__description{
+    padding-top: 27px;
+    padding-bottom: 18px;
+  }
+}

@@ -1,0 +1,52 @@
+.footer{
+  background-color: $color-pink;
+
+  &__wrapper{
+    background: $color-main;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+
+    @include break(small) {
+      border-left: none;
+      border-right: none;
+    }
+  }
+
+  &__column{
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-bottom: 15px;
+
+    &:not(&:first-child){
+      padding-left: 45px;
+    }
+
+    @include break(small) {
+      width: 65%;
+    }
+    @include break(super-small) {
+      width: 80%;
+    }
+  }
+
+  &__column-title{
+    font-size: 1.6rem;
+    line-height: 1.1;
+    color: $color-white;
+    @extend %fontFWS;
+    padding-bottom: 21px;
+    letter-spacing: 1px;
+  }
+
+  &__column-desc{
+    font-size: 0.75rem;
+    color: $color-white;
+    font-family: $helvetica;
+    font-weight: normal;
+    line-height: 1.2;
+  }
+
+  &__column-social{
+    padding-top: 18px;
+  }
+}

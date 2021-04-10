@@ -1,0 +1,33 @@
+.container {
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+  @extend %margin-center;
+
+  @include break(medium) {
+     width: 900px;
+   }
+  @include break(medium-second) {
+    width: 850px;
+  }
+  @include break(medium900) {
+    width: 800px;
+  }
+  @include break(medium850) {
+    width: 760px;
+  }
+  @include break(small) {
+    width: 100%;
+  }
+
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+
