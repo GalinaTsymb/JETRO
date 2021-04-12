@@ -11,10 +11,16 @@
 }
 
 .slider-big{
+  width: 100%;
 
   &__slide{
     width: 100%;
+
   }
+  .slick-slide div{
+    margin: 0 10px;
+  }
+
 }
 .slider-small{
   width: 100%;
@@ -26,9 +32,14 @@
     cursor: pointer;
   }
 
-  .slick-slide{
-    padding: 14px 10px;
-
+  .slick-slide div {
+    margin: 14px 10px;
   }
 }
 
+.slick-slider {
+  overflow: hidden;
+}
+.slick-slider .slick-list{
+  margin: 0 -10px;
+}

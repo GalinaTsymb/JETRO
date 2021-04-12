@@ -41,7 +41,6 @@
             asNavFor: '.js-slider-big',
             centerMode: false,
             focusOnSelect: true,
-            centerPadding: '20px',
             arrows: false,
             useTransform: false,
             responsive:[
