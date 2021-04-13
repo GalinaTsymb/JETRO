@@ -30,6 +30,13 @@
     width: 100%;
     height: 120px;
     cursor: pointer;
+
+    @include break(small) {
+      height: 100px;
+    }
+    @include break(x-small ) {
+      height: 80px;
+    }
   }
 
   .slick-slide div {

@@ -1,6 +1,10 @@
 .footer{
   background-color: $color-pink;
 
+  @include break(small) {
+    background-color:$color-main;
+  }
+
   &__wrapper{
     background: $color-main;
     border-left: 10px solid white;
@@ -19,6 +23,12 @@
 
     &:not(&:first-child){
       padding-left: 45px;
+
+      @include break(small) {
+        padding-left: 35px;
+
+      }
+
     }
 
     @include break(small) {
